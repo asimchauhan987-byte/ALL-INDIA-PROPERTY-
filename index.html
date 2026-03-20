@@ -3,21 +3,8 @@
 
 <head>
 <title>ALL INDIA PROPERTY</title>
-</head>
 
-<body>
-
-<h1>ALL INDIA PROPERTY</h1>
-
-<script src="script.js"></script>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-
-<head>
-<title>ALL INDIA PROPERTY</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
 
@@ -26,34 +13,51 @@ margin:0;
 font-family:Arial;
 }
 
+/* Top bar */
+
 .topbar{
 background:#0d6efd;
 color:white;
 padding:10px;
+display:flex;
+align-items:center;
 }
 
 .menu-btn{
 font-size:25px;
 cursor:pointer;
+margin-right:15px;
 }
+
+/* Sidebar */
 
 .sidebar{
 height:100%;
 width:0;
 position:fixed;
-left:0;
 top:0;
-background:black;
+left:0;
+background:#111;
 overflow-x:hidden;
 transition:0.3s;
 padding-top:60px;
 }
 
 .sidebar a{
+padding:10px;
 display:block;
 color:white;
-padding:10px;
 text-decoration:none;
+}
+
+.sidebar a:hover{
+background:#575757;
+}
+
+/* Content */
+
+.content{
+padding:20px;
 }
 
 </style>
@@ -64,18 +68,28 @@ text-decoration:none;
 
 <div class="topbar">
 <span class="menu-btn" onclick="openMenu()">☰</span>
-ALL INDIA PROPERTY
+<h2>ALL INDIA PROPERTY</h2>
 </div>
+
 
 <div id="menu" class="sidebar">
 
-<a href="#">Home</a>
-<a href="#">Login</a>
-<a href="#">Signup</a>
-<a href="#">Upload Property</a>
-<a href="#">Dashboard</a>
-<a href="#">Admin</a>
-<a href="#">AI Chat</a>
+<a href="index.html">Home</a>
+<a href="login.html">Login</a>
+<a href="signup.html">Signup</a>
+<a href="upload.html">Upload Property</a>
+<a href="dashboard.html">Dashboard</a>
+<a href="admin.html">Admin Panel</a>
+<a href="chat.html">Chat with Property AI</a>
+
+</div>
+
+
+<div class="content">
+
+<h1>Welcome to ALL INDIA PROPERTY</h1>
+
+<p>Buy / Sell / Rent Property Anywhere in India</p>
 
 </div>
 
